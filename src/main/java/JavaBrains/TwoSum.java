@@ -18,17 +18,8 @@ import java.util.ArrayList;
 
 public class TwoSum {
 
-    public static void main(String[] args) {
 
-        int[] nums = new int[]{3,15,2,7};
-        int requiredSum = 9;
-
-        int[] solution = twoSum(nums, requiredSum);
-        System.out.println(solution[0] + ", "+ solution[1]);
-
-    }
-
-    public static int[] twoSum(int[] nums, int requiredSum){
+    public int[] twoSum(int[] nums, int requiredSum){
 
         ArrayList<Integer> numbersSmallerThanSum = new ArrayList<Integer>();
         for (int num : nums) {
